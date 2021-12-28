@@ -1,0 +1,721 @@
+/************** css rules common to all sections have been given below *****************/
+
+body{
+    background-color: #cc0000;
+  
+}
+
+section{
+    padding-left : 5rem;
+    padding-right : 5rem;
+    margin-bottom : 5rem;
+}
+
+.white-text{
+    color : white;
+}
+
+.good-font{
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inline{
+    display : inline;
+}
+
+.grey-text{
+    color :lightgray;
+}
+
+/************ Section-wise rules are stated below ****************/
+
+
+/********** header section *********/
+#header{
+    display : flex;
+    
+}
+
+#music-player-image{
+    height : 4rem;
+    min-width : 5rem;
+    margin-top : 0.5rem;
+    margin-right : 0.5rem;
+}
+
+#music-player-image img{
+    height : 100%;
+    width : 100%;
+
+}
+
+#player-name{
+    font-weight : bolder;
+    font-size: 1.4rem;
+    margin-right : 2rem;
+    margin-top : 10px;
+}
+
+#favourites{
+    font-weight : 500;
+    font-size : 1rem;
+    margin-left : 3rem;
+}
+
+.search-box{
+    font-family : sans-serif; margin-left : 0.7rem; margin-right : 14rem;
+    color : #bfbfbf;
+    font-size : 15px;
+}
+
+#form{
+    display : flex;
+    height : 25px;
+    width : 330px;
+    background-color: #e60000;
+    margin-top : 1rem;
+    margin-left : 19rem;
+    margin-right : 3rem;
+    border-radius : 10px;
+    padding-left : 10px;
+    padding-top : 0.3rem;
+    padding-right : 10px;
+    border : none;
+}
+
+.icon{
+    color :white;
+    font-weight : 550;
+}
+
+#bell-icon{
+    color : white;
+    margin-left : 15px;
+    margin-top : 15px;
+}
+
+#my-image{
+    height : 4.1rem;
+    min-width : 4.1rem;
+    margin-left : 2rem;
+}
+
+#my-image img{
+    height : 100%;
+    width : 100%;
+    border-radius : 50%;
+}
+
+
+/************* favourites **************/
+
+#fav-and-queue{
+    display : flex;
+    margin-top : 3rem;
+}
+
+#swipe-cards{
+    display : flex;
+}
+
+
+#swipe-cards img{
+    width : 220px;
+    height : 250px;
+    border-radius : 5px;
+     margin : 0.3rem;
+}
+
+#swipe-cards img:hover{
+    transform : scale(1.18);
+    transition : 0.35s ease-in-out;
+}
+
+/************** queue ****************/
+
+#queue{
+    margin-left : 1rem;
+}
+
+#list{
+    margin-top : 3rem;
+}
+
+#list li{
+    display : flex;
+}
+
+
+
+.dropbtn {
+  background-color: inherit;
+  color: pink;
+  padding: 2rem;
+  margin-left: 12rem;
+  margin-top : -3rem;
+  font-size: 12px;
+  border: none;
+  font-weight: 600;
+  font-family : sans-serif;
+}
+
+#dropdown-icon{
+    color : pink;
+    background-color: inherit;
+    margin-left : -1.6rem;
+    margin-top : -0.9rem;
+    font-weight : bolder;
+    font-size : 12px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff5050;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content span {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+  font-size : 12px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    transition: 2s ease-in-out;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition : 1s ease-in-out;
+    }
+
+#list img{
+    height : 50px;
+    width : 50px;
+}
+
+#queue-text{
+    font-size : 1.3rem;
+    font-weight : bolder;
+    margin-left : 2rem;
+    margin-top : -0.8rem;
+}
+
+
+
+#songs-list {
+    margin-top : -3rem;
+    margin-right : 2.5rem;
+}
+
+
+.song-list-image{
+    height : 80px;
+    width : 80px;
+    display : flex;
+}
+
+.song-list-image img{
+    height : 100%;
+    width : 100%;
+    border-radius : 5px;
+    opacity : 0.8;
+    
+}
+
+.song-desc{
+    font-size : 0.65rem;
+    margin-left : 0.8rem;
+    margin-top : 5px;
+    color : white;
+    font-family: sans-serif;
+}
+
+.song-list-name{
+    font-size : 0.8rem;
+    margin-left : 0.8rem;
+    margin-top : 0.5rem;
+    color : white;
+    font-family : sans-serif;
+    font-weight : bolder;
+    letter-spacing: 0.8px;
+}
+
+.song-list-desc span{
+    display : inline-block;
+    margin-left : -0.9rem;
+}
+
+li::before {
+    content: counter(li); 
+    color: white;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  margin-top : 0.8rem;
+  font-weight: 650;
+  }
+
+  li{
+      counter-increment: li;
+  }
+
+.song-list-image::after{
+    content : '\f004';
+    font-family: "Font Awesome 5 Free";
+    display : inline-block; 
+    margin-left : 11rem;
+    margin-top : 0.5rem;
+    color: #ff8080;
+}
+
+ol{
+    list-style: none;
+    counter-reset: li
+}
+
+                  /************** Latest Releases *********************/
+
+#latest-release-div{
+    display : flex;
+    width : 100%;
+    flex-wrap : wrap;
+}
+
+.latest-release-items{
+    display : flex;
+}
+
+.latest-release-image{
+    height : 130px;
+    width : 130px;
+    margin : 2.5rem 0rem;
+    margin-left : 1.8rem;
+    position : relative;
+    }
+
+.latest-release-image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color:inherit;
+  /*border-radius : 50%;*/
+}
+
+.latest-release-image img{
+    height : 100%;
+    width : 100%;
+    opacity : 0.9;
+    border-radius: 5px;
+}
+
+.latest-release-image:hover .overlay {
+  opacity: 1;
+  
+}
+
+.latest-release-image img:hover{
+    opacity : 1;
+    transition : 0.1s ease;
+    
+}
+
+.latest-release-details{
+    margin-left : 2rem;
+    color : white;
+    font-family : sans-serif;
+    font-weight : 550;
+    font-size : 14px;
+    margin-top : 3.5rem;
+    letter-spacing: 0.8px;
+}
+
+.latest-release-duration{
+    color : pink;
+    margin : 4rem 1rem 0rem 9.5rem;
+}
+
+.release-date{
+    color : pink;font-size : 11px; letter-spacing : 0px;
+}
+
+.late-rel-dropbtn {
+  background-color: inherit;
+  color: pink;
+  border: none;
+  font-family : sans-serif;
+}
+
+
+.late-rel-dropdown {
+  position: relative;
+  display: flex;
+}
+
+
+.late-rel-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff5050;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.late-rel-dropdown-content span {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+  font-size : 12px;
+}
+
+.late-rel-dropdown-content a:hover {
+    background-color: #ddd;
+    transition: 2s ease-in-out;
+    }
+
+.late-rel-dropdown:hover .late-rel-dropdown-content {
+    display: block;
+    transition : 1s ease-in-out;
+    }
+
+                 /****************** popular artists *************/
+
+#popular-artists{
+    display : flex;
+}
+
+#pop-artists-text{
+    padding : 0 3.5rem;
+}
+
+.artist-image{
+    height : 120px;
+    width : 120px;
+    margin : 0.5rem 1.2rem;
+    position : relative;
+}
+
+.artist-image img{
+    border-radius : 50%;
+    height : 100%;
+    width : 100%;
+    opacity : 0.8;
+}
+
+.artist-name{
+    color : #ffbb99;
+    margin-left : 2.3rem;
+    font-family : sans-serif;
+    font-size : 1rem;
+    margin-top : 0.5rem;
+    font-weight : 550;
+    letter-spacing: 0.2px;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color:inherit;
+  border-radius : 50%;
+}
+
+.artist-image:hover .overlay {
+  opacity: 1;
+  box-shadow: 0px 0px 8px 8px rgba(230, 196, 196, 0.3);
+}
+
+.play-icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.artist-image img:hover{
+    opacity : 1;
+    transition : 0.1s ease;
+    
+}
+
+
+
+/***************** Stations *****************/
+
+#stations{
+    display : flex;
+    background-color :#e62e00;
+    height : 180px;
+    width : 63rem;
+    margin : 0 4rem 5rem;
+    padding : 0 1rem;
+}
+
+
+
+.station-image{
+    width : 100px;
+    height : 100px;
+    margin : 2rem;
+     
+}
+
+.station-image img{
+    height : 100%;
+    width : 100%;
+    border-radius : 50%;
+    opacity: 0.65;
+     z-index: 1;
+}
+
+.station-name{
+    font-weight : bolder;
+    font-size: 20px;
+    color : white;
+    margin-top : -6rem;
+    font-family : sans-serif;
+    margin-left : 3.7rem;
+  position : absolute;
+}
+
+.station-image img:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+     /************** Genres ***************/
+
+#genres{
+    display : flex;
+    padding : 0 0px;
+    width : 75%;
+    margin : 0 4rem 5rem;
+}
+
+.genre-image{
+    width : 300px;
+    height : 250px;
+    margin : 0 1.5rem;
+    overflow: hidden;
+    display : inline-block;
+    position : relative;
+    
+}
+
+
+
+.genre-image img{
+    width : 100%;
+    height : 100%;
+    opacity: 0.7;
+    transition: all .2s ease;
+}
+
+.genre-name{
+    font-weight : bolder;
+    font-size: 40px;
+    color : white;
+    margin-top : -9rem;
+    font-family : sans-serif;
+    margin-left : 7rem;
+  position : absolute;
+}
+
+.genre-image img:hover{
+    transform : scale(1.5);
+    transition : 0.5s ease-in-out;
+}
+
+
+
+      /******* Latest songs ***********/
+
+
+
+#latest-songs{
+    display : flex;
+    margin-top : 1rem;
+}
+
+.song-pic{
+    margin : 0.2rem 2rem;
+    height : 125px;
+    width : 125px;
+
+}
+
+.song-pic img{
+    height : 100%;
+    width : 100%;
+    border-radius : 5px;
+    opacity : 0.9;
+}
+
+.song-name{
+    
+    margin-left : 2rem;
+    font-size : 0.9rem;
+}
+
+.singer{
+    margin-left : 2rem;
+    font-size : 0.7rem;
+}
+
+.song-pic img:hover{
+    opacity : 1;
+}
+
+
+  /************** Music Player *******************/
+
+  #music-player{
+      width : 73rem;
+      height: 180px;
+      background-color :#800000;
+      display : flex;
+  }
+
+  #music-player-sec-1{
+      display : flex;
+      padding-top : 2rem;
+  }
+
+  #music-player-song-image{
+      height : 8vw;
+      width : 8vw;
+      min-width : 80px;
+      min-height : 80px;
+  }
+
+  #music-player-song-image img{
+      height : 100%;
+      width : 100%;
+      border-radius: 5px;
+  }
+
+  #music-player-song-details{
+      margin-left: 1rem;
+  }
+
+  #music-player-icons{
+      display : flex;
+      margin-top : 1.3rem;
+      margin-left : 2rem;
+      color : white;
+      font-weight : 500;
+  }
+
+  #music-player-sec-2{
+      margin-left : 8rem;
+      padding-top : 2rem;
+      margin-top : 1.5rem;
+  }
+
+#song-progress{
+    display : flex;
+}
+
+#song-progress span{
+    color : white;
+    font-size : 15px;
+    margin : -4px 5px 0px;
+}
+
+  #play-controls{
+      color : white;
+      display : flex;
+      position: center;
+      width : 60%;
+      justify-content: space-between;
+      margin-left : 5.5rem;
+      margin-bottom : 1rem;
+  }
+
+  #song-length{
+      width : 450px;
+      height : 5px;
+      background-color: lightgrey;
+      border : 0.5px solid olive;
+      border-radius: 10px;
+      display : inline-block;
+  }
+
+  #length-played{
+      height : inherit;
+      width : 40%;
+      background-color: green;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+  #music-player-sec-3{
+      margin-left : 6rem;
+      padding-top : 2rem;
+      margin-top : 1.5rem;
+      display : flex;
+  }
+
+
+  #max-volume{
+      width : 80px;
+      height : 5px;
+      background-color: lightgrey;
+      border : 0.5px solid olive;
+      border-radius: 10px;
+      display : inline-block;
+      margin-left : -0.5rem;
+  }
+
+  #volume{
+      height : inherit;
+      width : 40%;
+      background-color: green;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+
+  #music-player-sec-3 i{
+      color : white;
+      font-size : 15px;
+      margin : -0.3rem 0.8rem;
+  }

@@ -1,0 +1,560 @@
+body{
+    background-color: #cc0000;
+}
+
+section{
+    padding-left : 5rem;
+    padding-right : 5rem;
+    margin-bottom : 5rem;
+}
+
+.white-text{
+    color : white;
+}
+
+.good-font{
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inline{
+    display : inline;
+}
+
+.grey-text{
+    color :lightgray;
+}
+
+
+/********** header *********/
+#header{
+    display : flex;
+    
+}
+
+#music-player-image{
+    height : 4rem;
+    min-width : 5rem;
+    margin-top : 0.5rem;
+    margin-right : 0.5rem;
+}
+
+#music-player-image img{
+    height : 100%;
+    width : 100%;
+
+}
+
+#player-name{
+    font-weight : bolder;
+    font-size: 1.4rem;
+    margin-right : 2rem;
+    margin-top : 10px;
+}
+
+#favourites{
+    font-weight : 500;
+    font-size : 1rem;
+    margin-left : 3rem;
+}
+/*input{
+    height : 25px;
+    width : 250px;
+    background-color: #e60000;
+    margin-top : 1rem;
+    margin-left : 30rem;
+    border-radius : 10px;
+    padding-left : 10px;
+    border : none;
+}*/
+/*::placeholder{
+    color : white;
+    opacity : 1;
+    
+}*/
+.search-box{
+    font-family : sans-serif; margin-left : 0.7rem; margin-right : 14rem;
+    color : #bfbfbf;
+    font-size : 15px;
+}
+
+#form{
+    display : flex;
+    /*width : 50px;*/
+    height : 25px;
+    width : 330px;
+    background-color: #e60000;
+    margin-top : 1rem;
+    margin-left : 19rem;
+    margin-right : 3rem;
+    border-radius : 10px;
+    padding-left : 10px;
+    padding-top : 0.3rem;
+    padding-right : 10px;
+    border : none;
+}
+
+.icon{
+    color :white;
+    font-weight : 550;
+}
+
+#bell-icon{
+    color : white;
+    margin-left : 15px;
+    margin-top : 15px;
+}
+
+#my-image{
+    height : 4.1rem;
+    min-width : 4.1rem;
+    margin-left : 2rem;
+}
+
+#my-image img{
+    height : 100%;
+    width : 100%;
+    border-radius : 50%;
+}
+
+/************* profile **************/
+
+#profile-and-similar-artists{
+    display : flex;
+}
+
+#profile{
+    display : flex;
+    background-color : #e62e00;
+    width : 750px;
+    min-width : 830px;
+    height : 280px;
+}
+
+#profile-pic{
+    min-height : 280px;
+    min-width : 250px;
+}
+
+#profile-pic img{
+    height : 100%;
+    width : 100%;
+     opacity : 0.8;
+}
+
+#profile-desc{
+    padding-top : 1.5rem;
+    margin-left : 1rem;
+}
+
+#singer-name{
+    color : white;
+    font-weight : bolder;
+    font-size : 30px;
+    font-family : sans-serif;
+    display : inline-block;
+    letter-spacing: 0.9px;
+}
+
+#singer-origin{
+    color : lightgrey;
+    font-size: 15px;
+    font-family : 'Times New Roman', Times, serif;
+    margin-top : -1.8rem;
+    font-weight : 650;
+}
+
+#singer-desc{
+    color :white;
+    font-size: 12px;
+    font-family : sans-serif;
+    margin-top : 1rem;
+    font-weight : 650;
+    margin-bottom : 2rem;
+    
+}
+
+#button{
+    height : 1.8rem;
+    width : 7rem;
+    background-image: linear-gradient(to right, #cc0000 , #e62e00);
+    border : 1.5px solid white;
+    color : white;
+    font-size: 1rem;
+    font-family : sans-serif;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
+}
+
+#button:hover{
+    background-image: linear-gradient(to right, white , white);
+    color : #e62e00;
+    transition : 0.1s ease;
+}
+
+#songs-and-albums{
+    color : white;
+    font-size : 10px;
+    font-family : sans-serif;
+    font-weight: bolder;
+    margin-top : 5px;
+}
+
+#followers{
+    color: lightgray;
+    font-size : 11px;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 12rem;
+    margin-top : 2px;
+}
+
+#follow{
+    color : white;
+    font-size : 16px;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 6rem;
+    font-weight: bolder;
+}
+
+
+
+
+/************** Similar artists ****************/
+
+#profile-and-similar-artists #queue{
+    margin-left : 1rem;
+    display : flex;
+    flex-direction : column;
+}
+
+#list img{
+    height : 50px;
+    width : 50px;
+    opacity : 0.85;
+    border-radius : 5px;
+}
+#similar-artists-text-div{
+    display : flex;
+}
+
+#similar-artists-text{
+    display : inline-block;
+    font-size : 1.3rem;
+    font-weight : bolder;
+    margin-left : 2rem;
+    margin-top : -0.8rem;
+    margin-bottom : -0.5rem;
+}
+
+#view-all{
+    color : white;
+    font-size : 11px;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5rem;
+}
+
+.song-name{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left : 0.8rem;
+    margin-top : 0.5rem;
+}
+
+.song-detail{
+    font-size : 0.8rem;
+    margin-left : -2.2rem;
+    margin-top : 1.5rem;
+}
+
+ol{
+    list-style: none;
+    counter-reset: li
+}
+
+li{
+    display : flex;
+    margin : 1rem 0;
+}
+
+
+#similar-artists-div li::after{
+    content : '\f004';
+    font-family: "Font Awesome 5 Free";
+    display : inline-block; 
+    margin-left : 6rem;
+    margin-top : 0.9rem;
+    color: #ff8080;
+}
+
+
+
+
+ /******************* Songs list and recently played **************/
+
+
+ #songs-list-and-recently-played{
+     display : flex;
+ }
+
+#songs-list {
+    margin-top : -3rem;
+    margin-right : 2.5rem;
+}
+#songs-list li{
+    display : flex;
+    margin : 1rem -2rem;;
+    background-color: #e60000;
+    width : 800px;
+}
+
+.song-list-image{
+    height : 80px;
+    width : 80px;
+    display : inline-block;
+}
+
+.song-list-image img{
+    height : 100%;
+    width : 100%;
+    border-radius : 5px;
+    opacity : 0.8;
+    
+}
+
+.song-desc{
+    font-size : 0.65rem;
+    margin-left : 0.8rem;
+    margin-top : 5px;
+    color : white;
+    font-family: sans-serif;
+}
+
+.song-list-name{
+    font-size : 0.8rem;
+    margin-left : 0.8rem;
+    margin-top : 0.5rem;
+    color : white;
+    font-family : sans-serif;
+    font-weight : bolder;
+    letter-spacing: 0.8px;
+}
+
+.song-list-desc span{
+    display : inline-block;
+}
+
+li::before {
+    content: counter(li); 
+    color: white;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  margin-top : 0.8rem;
+  font-weight: 650;
+  }
+
+  li{
+      counter-increment: li;
+  }
+
+/*#songs-list .song-list-desc::after{
+    content : '\f004' '\f04b';
+    font-family: "Font Awesome 5 Free";
+    display : inline-block; 
+    margin-left : 32rem;
+    color: #ff8080;
+}*/
+
+.heart-icons{
+    margin-left : 30rem;
+    color: #ff8080;
+    font-size : 18px;
+    margin-top : 1.8rem;
+}
+
+
+  /*************** Recently played *************/
+
+  #queue{
+    margin-left : 1rem;
+}
+
+#list img{
+    height : 50px;
+    width : 50px;
+    opacity : 0.85;
+    border-radius : 5px;
+}
+
+#recently-played-text{
+    display : flex;
+}
+
+/*#similar-artists-text{
+    display : inline-block;
+    font-size : 1.3rem;
+    font-weight : bolder;
+    margin-left : 2rem;
+    margin-top : -0.8rem;
+    margin-bottom : -0.5rem;
+}*/
+
+#view-all{
+    color : white;
+    font-size : 11px;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5rem;
+}
+
+.song-name{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left : 0.8rem;
+    margin-top : 0.5rem;
+}
+
+.song-detail{
+    font-size : 0.8rem;
+    /*margin-left : -2.7rem;*/
+    margin-top : 1.5rem;
+}
+
+ol{
+    list-style: none;
+    counter-reset: li
+}
+
+li{
+    display : flex;
+    margin : 1rem 0;
+}
+
+li::before {
+    content: counter(li); 
+    color: white;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  margin-top : 0.7rem;
+  font-weight: 500;
+  font-size : 14px;
+  }
+
+  li{
+      counter-increment: li;
+  }
+
+  
+
+
+/************** Music Player *******************/
+
+  #music-player{
+      width : 73rem;
+      height: 180px;
+      background-color :#800000;
+      display : flex;
+  }
+
+  #music-player-sec-1{
+      display : flex;
+      padding-top : 2rem;
+  }
+
+  #music-player-song-image{
+      height : 100px;
+      width : 100px;
+  }
+
+  #music-player-song-image img{
+      height : 100%;
+      width : 100%;
+      border-radius: 5px;
+  }
+
+  #music-player-song-details{
+      margin-left: 1rem;
+  }
+
+  #music-player-icons{
+      display : flex;
+      margin-top : 1.3rem;
+      margin-left : 2rem;
+      color : white;
+      font-weight : 500;
+  }
+
+  #music-player-sec-2{
+      margin-left : 8rem;
+      padding-top : 2rem;
+      margin-top : 1.5rem;
+  }
+
+#song-progress{
+    display : flex;
+}
+
+#song-progress span{
+    color : white;
+    font-size : 15px;
+    margin : -4px 5px 0px;
+}
+
+  #play-controls{
+      color : white;
+      display : flex;
+      position: center;
+      width : 60%;
+      justify-content: space-between;
+      margin-left : 5.5rem;
+      margin-bottom : 1rem;
+  }
+
+  #song-length{
+      width : 450px;
+      height : 5px;
+      background-color: lightgrey;
+      border : 0.5px solid olive;
+      border-radius: 10px;
+      display : inline-block;
+  }
+
+  #length-played{
+      height : inherit;
+      width : 40%;
+      background-color: green;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+  #music-player-sec-3{
+      margin-left : 6rem;
+      padding-top : 2rem;
+      margin-top : 1.5rem;
+      display : flex;
+  }
+
+
+  #max-volume{
+      width : 80px;
+      height : 5px;
+      background-color: lightgrey;
+      border : 0.5px solid olive;
+      border-radius: 10px;
+      display : inline-block;
+      margin-left : -0.5rem;
+  }
+
+  #volume{
+      height : inherit;
+      width : 40%;
+      background-color: green;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+
+  #music-player-sec-3 i{
+      color : white;
+      font-size : 15px;
+      margin : -0.3rem 0.8rem;
+  }
