@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/13f7382ef7.js" crossorigin="anonymous"></script>
+     <link rel = "stylesheet" type = "text/css" href = "assets/styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+      
+ <!--/*********** The body is divided into various sections based on the design. Each new section begins with the tag section ******************/-->
+
+    <!--/********************* Header ******************/-->
+
+    <section id = "header">
+        <div id = "music-player-image">
+            <img src = "assets/music player image.png">
+        </div>
+        
+        <p class = "white-text good-font" id = "player-name"> Songs <br> Adda </p>
+        <p class = "white-text good-font" id = "favourites"> Favourites </p>
+        
+        <div id = "form">
+            <i class="fas fa-search icon"></i>
+            <span class = "white-text search-box"> Search </span>
+            <i class="fas fa-microphone icon"></i>
+        </div>
+        <div id = "bell-icon">
+            <i class="fas fa-bell" style = "font-size : 22px;"></i>
+        </div>
+        <div id = "my-image">
+        <img src = "assets/2014-09-26 cropped.jpg" >
+        </div>
+     </section>
+
+
+
+
+     <!--/************************** Favourites and aside queue ********************/-->
+
+
+    <section id = "fav-and-queue">
+
+        <!--music cards-->
+
+         <div id = "swipe-cards">                                     
+             <img src = "assets/Punjabi Songs.jpg" class = "cards">
+             <img src = "assets/Bollywood Songs.jpg" class = "cards" >
+             <img src = "assets/Old Songs.jpg" class = "cards">
+             <img src = "assets/Sufi Songs.jpg" class = "cards">
+         </div>
+
+        <!--aside queue-->
+
+         <div id = "queue">                                                                           
+             <span class = "white-text good-font" id = "queue-text"> Queue </span>
+              <div class="dropdown">
+                 <button class="dropbtn">Queue</button>
+                 <i class="fas fa-chevron-circle-down" id = "dropdown-icon"></i>
+                <div class="dropdown-content">
+                     <span>Playlists</span>
+                     <hr>
+                     <span>Favourite Songs</span>
+              </div>
+          </div>
+             <div id = "list">
+                 <ol >
+                     <li>
+                            <div class = "song-list-image"> <img src = "assets/Bekhayali.jpg"> </div>
+                            <div class = "song-list-desc"> <span class = "song-list-name white-text"> Bekhayali </span> <br> <span class = "song-desc"> Kabir Singh </span> </div>
+                     </li>
+                     <li>
+                            <div class = "song-list-image"> <img src = "assets/Aaoge tum kabhi.jpg"> </div>
+                            <div class = "song-list-desc"> <span class = "song-list-name white-text"> Aaoge Tum Kabhi </span> <br> <span class = "song-desc"> The Local Train </span> </div>
+                     </li>
+                     <li>
+                            <div class = "song-list-image"> <img src = "assets/Libaas.jpg"> </div>
+                            <div class = "song-list-desc"> <span class = "song-list-name white-text"> Libaas </span> <br> <span class = "song-desc"> Kaka </span> </div>
+                     </li>
+                     <li>
+                            <div class = "song-list-image"> <img src = "assets/Raule.jpg"> </div>
+                            <div class = "song-list-desc"> <span class = "song-list-name white-text"> Raule </span> <br> <span class = "song-desc">Jassa Dhillon </span> </div>
+                    </li>
+                     
+                </ol>
+             </div>
+         </div>
+
+    </section>
+
+    <!--/******************** Latest Releases **********************/-->
+
+
+    <section id = "latest-releases">
+        <div class = "white-text good-font" id = "queue-text"> Latest Release </div>
+
+        <!--/************* an outer div named as latest-release-div has been kept ***********/-->
+        <div id = "latest-release-div">
+
+            <!--/******* Each song has been made in separate div with class latest-release-items *****/-->
+        <div class = "latest-release-items">
+            <div class = "latest-release-image">
+                <img src = "assets/Titlian.jpg">
+                 <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+                
+            </div>
+            <div class = "latest-release-details">
+                <p> Titlian </p>
+                <p class = "release-date"> DEC 10,2020 </p>
+            </div>
+            <div class = "latest-release-duration">
+
+                <!--a dropdown has been provided for each item-->
+
+                 <div class="late-rel-dropdown">
+                 <button class="late-rel-dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                
+                <div class="late-rel-dropdown-content">
+                     <span>Play</span>
+                     <hr>
+                     <span>Add to Favourites</span>
+              </div>
+          </div>
+                 
+                <p style = "font-size : 12px;"> 5:41 <p>
+            </div>
+        </div>
+
+        <!--/********** first song div ends here ************/-->
+
+        <div class = "latest-release-items">
+            <div class = "latest-release-image">
+                <img src = "assets/Phulkari.jpg">
+                 <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "latest-release-details">
+                <p> Phulkari </p>
+                <p  class = "release-date"> AUG 1,2020 </p>
+            </div>
+            <div class = "latest-release-duration">
+               <div class="late-rel-dropdown">
+                 <button class="late-rel-dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                
+                <div class="late-rel-dropdown-content">
+                     <span>Play</span>
+                     <hr>
+                     <span>Add to Favourites</span>
+              </div>
+          </div>
+                <p style = "font-size : 12px;"> 4:55 <p>
+            </div>
+        </div>
+
+        <!--next div-->
+       
+
+        <div class = "latest-release-items">
+            <div class = "latest-release-image">
+                <img src = "assets/Ranjha.jpg">
+                 <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "latest-release-details">
+                <p> Ranjha </p>
+                <p class = "release-date"> SEP 25,2021 </p>
+            </div>
+            <div class = "latest-release-duration">
+               <div class="late-rel-dropdown">
+                 <button class="late-rel-dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                
+
+                <div class="late-rel-dropdown-content">
+                     <span>Play</span>
+                     <hr>
+                     <span>Add to Favourites</span>
+              </div>
+          </div>
+                <p style = "font-size : 12px;"> 5:20 <p>
+            </div>
+        </div>
+        
+        <!--next div-->
+
+        <div class = "latest-release-items">
+            <div class = "latest-release-image">
+                <img src = "assets/Kaise Hua.jpg">
+                 <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "latest-release-details">
+                <p> Kaise Hua </p>
+                <p class = "release-date"> JAN 2,2020 </p>
+            </div>
+            <div class = "latest-release-duration">
+                <div class="late-rel-dropdown">
+                 <button class="late-rel-dropbtn"> <i class="fas fa-ellipsis-h"></i></button>
+                
+                <div class="late-rel-dropdown-content">
+                     <span>Play</span>
+                     <hr>
+                     <span>Add to Favourites</span>
+
+              </div>
+          </div>
+                <p style = "font-size : 12px;"> 5:35 <p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+   <!--/********************** Popular Artists ***********************/-->
+
+        <div id = "pop-artists-text">
+             <p class = "white-text good-font" id = "queue-text"> Popular Artists </p>
+        </div>
+    <section id = "popular-artists">
+        
+        <!--each artist has been made as a separate div with class artist-image-name-->
+
+        <div class = "artist-image-name">
+            <div class = "artist-image">  
+                <img src = "assets/Sharry Mann.jpg">
+                 <div class="overlay">
+
+        <!--for the first artist (Sharry Mann), a separate page has been created and linked via anchor tag-->
+
+                     <a href="Artist Screen.html" target = "_blank" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "artist-name">
+                Sharry Mann
+            </div>
+        </div>
+
+        <!--div for next artist begins-->
+
+        <div class = "artist-image-name">
+            <div class = "artist-image">  
+                <img src = "assets/Kaka.jpg">
+                <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "artist-name">
+                &nbsp &nbsp &nbsp Kaka
+            </div>
+        </div>
+
+
+         <div class = "artist-image-name">
+            <div class = "artist-image"> 
+                
+                <img src = "assets/Ninja.jpg" >
+                <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div> 
+            </div>
+            <div class = "artist-name">
+               &nbsp &nbsp &nbsp Ninja
+            </div>
+        </div>
+
+
+        <div class = "artist-image-name">
+            <div class = "artist-image">  
+                <img src = "assets/Karan Aujla.jpg">
+                <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "artist-name">
+                Karan Aujla
+            </div>
+        </div>
+
+
+       <div class = "artist-image-name">
+            <div class = "artist-image">  
+                <img src = "assets/Ammy Virk.jpg">
+                <div class="overlay">
+                     <a href="#" class="play-icon">
+                     <i class="fas fa-play"></i>
+                     </a>
+             </div>
+            </div>
+            <div class = "artist-name">
+                Ammy Virk
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<!--/************** Stations ******************/-->
+
+    <section id = "stations">
+        <div class = "station-image-name">
+            <div class = "station-image" style = "width : 110px; height : 110px;">  
+                <img src = "assets/Stations.jpg" style = "border-radius : 5px;">
+            </div>
+            <div class = "station-name" style = "margin-left : 2.5rem; margin-top : -6.3rem; font-size : 23px;">
+                <span> Stations </span>
+            </div>
+        </div>
+
+        <!--each station is made as a separate div with class station-image-name-->
+
+         <div class = "station-image-name">
+            <div class = "station-image">  
+                <img src = "assets/Love.jpg">
+            </div>
+            <div class = "station-name">
+                <span> Love </span>
+            </div>
+        </div>
+
+        <!--first station div ends here and next begins-->
+
+        <div class = "station-image-name">
+            <div class = "station-image">  
+                <img src = "assets/Road Trip.jpg">
+            </div>
+            <div class = "station-name">
+                <span> Travel </span>
+            </div>
+        </div>
+
+         <div class = "station-image-name">
+            <div class = "station-image">  
+                <img src = "assets/Gym.jpg" >
+            </div>
+            <div class = "station-name">
+                <span> Gym </span>
+            </div>
+        </div>
+
+        <div class = "station-image-name">
+            <div class = "station-image">  
+                <img src = "assets/Pop.jpg">
+            </div>
+            <div class = "station-name">
+                <span> Pop </span>
+            </div>
+        </div>
+
+       <div class = "station-image-name">
+            <div class = "station-image">  
+                <img src = "assets/Retro.jpg">
+            </div>
+            <div class = "station-name">
+                <span> Retro </span>
+            </div>
+        </div>
+    </section>
+
+ <!--/****************** Genres *********************/-->
+
+    <section id = "genres">
+        <div class = "genre-image-name">
+            <div class = "genre-image"> 
+                 <img src = "assets/Party.jpg"> 
+            </div>
+            <div class = "genre-name">
+                <span> Party </span>
+            </div>
+        </div>
+        <div class = "genre-image-name">
+            <div class = "genre-image">  
+                <img src = "assets/Chill.jpg">
+            </div>
+            <div class = "genre-name">
+                <span> Chill </span>
+            </div>
+        </div>
+         <div class = "genre-image-name">
+            <div class = "genre-image">  
+                <img src = "assets/Electronic.jpg">
+            </div>
+            <div class = "genre-name" style = "margin-left : 5rem;">
+                <span> Electronic </span>
+            </div>
+        </div>
+    </section>
+
+
+       <!--Latest Punjabi-->
+
+        <div id = "pop-artists-text">
+             <p class = "white-text good-font" id = "queue-text"> Latest Punjabi </p>
+        </div>
+
+    <section id = "latest-songs">
+        <div class = "pic-title">
+            <div class = "song-pic" style = "margin-left: 0.6rem;">
+                <img src = "assets/Titlian.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name" style = "margin-left: 0.6rem;"> Titlian </span> <br>
+               <span class = "singer grey-text"style = "margin-left: 0.6rem;"> Afsana Khan </span>
+            </div>
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Barood Wargi.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name"> Barood Wargi </span> <br>
+                <span class = "singer grey-text"> Simran Kaur </span>
+            </div> 
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Phulkari.jpg">
+            </div>
+            <div class = " white-text">
+               <span class = "song-name"> Phulkari </span> <br>
+                <span class = "singer grey-text"> Karan Randhawa </span>
+            </div>
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Lehenga.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name"> Lehenga </span> <br>
+                <span class = "singer grey-text"> Jass Manak </span>
+            </div>
+        </div>
+
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Talja.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name" >Talja </span> <br>
+                <span class = "singer grey-text"> Jassa Dhillon </span>
+            </div>
+        </div>
+    </section>
+
+
+             <!--Latest Hindi-->
+     <div id = "pop-artists-text">
+             <p class = "white-text good-font" id = "queue-text"> Latest Hindi </p>
+        </div>
+
+    <section id = "latest-songs">
+        <div class = "pic-title">
+            <div class = "song-pic" style = "margin-left: 0.6rem;">
+                <img src = "assets/Ranjha.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name" style = "margin-left: 0.6rem;"> Ranjha </span> <br>
+               <span class = "singer grey-text"style = "margin-left: 0.6rem;"> Shershah </span>
+            </div>
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Kaise Hua.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name"> Kaise Hua </span> <br>
+                <span class = "singer grey-text"> Kabir Singh </span>
+            </div> 
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Mann Bhareya.jpg">
+            </div>
+            <div class = " white-text">
+               <span class = "song-name"> Mann Bhareya </span> <br>
+                <span class = "singer grey-text"> Shershah </span>
+            </div>
+        </div>
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Khalibali.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name"> Khalibali </span> <br>
+                <span class = "singer grey-text"> Padmavat </span>
+            </div>
+        </div>
+
+        <div class = "pic-title">
+            <div class = "song-pic">
+                <img src = "assets/Oh ho ho.jpg">
+            </div>
+            <div class = " white-text">
+                <span class = "song-name"> Oh Ho Ho </span> <br>
+                <span class = "singer grey-text"> Hindi Medium </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!--/******************* Music Player  ********************/-->
+
+    <section id = "music-player">
+    <!--/**** The music player is divided into three sections and each section has been implemented separately ******/-->
+
+    <!--/**** section - 1 ****/-->
+        <div id = "music-player-sec-1">
+            <div id = "music-player-song-image">
+                <img src= "assets/Bekhayali.jpg">
+            </div>
+            <div id = "music-player-song-details">
+                <p style = "font-size : 18px; color : white;letter-spacing : 1px; font-weight : bolder;"> Bekhayali </p>
+                <p style = "font-size : 13px; font-family : sans-serif; color :lightgrey; margin-top : -0.8rem;"> Kabir Singh </p>
+            </div>
+            <div id = "music-player-icons">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban" style = "margin-left : 0.5rem;"></i>
+            </div>
+        </div>
+
+<!--/********** section - 2 **********/-->
+
+        <div id = "music-player-sec-2">
+            <div id = "play-controls">
+                 <i class="fas fa-random" style = "font-size : 22px;"></i>
+                <i class="fas fa-step-backward" style = "font-size : 22px;"></i>
+                <i class="far fa-pause-circle" style = "font-size : 50px; margin-top : -1.2rem;"></i>
+                <i class="fas fa-step-forward" style = "font-size : 22px;"></i>
+                <i class="fas fa-random" style = "font-size : 22px;"></i>
+                
+            </div>
+            <div id = "song-progress">
+            <span > 1:39 </span>
+            <div id = "song-length">
+                <div id = "length-played">
+                    <i class="fas fa-circle" style = "font-size : 25px; color : white; margin :-1rem 0 0 11rem; display : inline-block;"></i>
+                </div>
+                
+            </div>
+            <span > 5:25 </span> 
+            </div>
+        </div>
+
+        <!--/******** section - 3 ********/-->
+
+        <div id = "music-player-sec-3">
+            <i class="fas fa-undo"></i>
+            <i class="fas fa-volume-up"></i>
+            <div id= "max-volume">
+                <div id = "volume">
+                </div>
+            </div>
+            <i class="fas fa-expand-alt"></i>
+
+        </div>
+    </section>
+
+</body>
+</html>

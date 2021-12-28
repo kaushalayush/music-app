@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script src="https://kit.fontawesome.com/13f7382ef7.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href = "assets/Artist Screen styles.css">
+    <title>Single Playlist</title>
+</head>
+<body>
+
+
+<!--/***************** Header ******************/-->
+
+     <section id = "header">
+        <div id = "music-player-image">
+            <img src = "assets/music player image.png">
+        </div>
+        <p class = "white-text good-font" id = "player-name"> Songs Adda </p>
+        <p class = "white-text good-font" id = "favourites"> Favourites </p>
+       
+        <div id = "form">
+            <i class="fas fa-search icon"></i>
+            <!--<input type = "text" placeholder="Search">-->
+            <span class = "white-text search-box"> Search </span>
+            <i class="fas fa-microphone icon"></i>
+        </div>
+        <div id = "bell-icon">
+            <i class="fas fa-bell" style = "font-size : 22px;"></i>
+        </div>
+        <div id = "my-image">
+        <img src = "assets/2014-09-26 cropped.jpg" >
+        </div>
+     </section>
+
+     <!--/************** Similar artists *****************/-->
+
+    <section id = "profile-and-similar-artists">
+         <div id = "profile">
+             <div id = "profile-pic">
+                 <img src = "assets/Sharry Mann.jpg">
+             </div>
+             <div id = "profile-desc">
+                 <p id = "singer-name" > Sharry Mann </p>
+                 <span id = "followers"> 1,023 followers <span>
+                 <p id = "singer-origin"> Punjabi Singer </p>
+                 <p id = "singer-desc"> Sharry Mann started his career in 2011 with the song "Yaar Anmulle". The song proved to be massive hit becoming one of greatest hit of the year. In 2012, he released his second album "Aate Di Chiri". Songs "Chandigarh Waliye","Sohne Mukhde","Bhul Jayin Na","Yenkne" were highly appreciated. </p>
+                 <button id = "button"> Play All </button>
+                 <span id = "follow"> Follow </span>
+                 <p id = "songs-and-albums" > 84 tracks | 14 Albums </p>
+             </div>
+         </div>
+
+         <div id = "queue">
+             <div id = "similar-artists-text-div">
+                 <p class = "white-text good-font" id = "similar-artists-text"> Similar Artists </p>
+                <span id = "view-all"> View All </span>
+             </div>
+             <div id = "similar-artists-div">
+                 <ol id = "list">
+                     <li>  <img src = "assets/Ammy Virk.jpg" > <span class = "song-name white-text good-font ">Ninja  </span> <br> <span class = "song-detail good-font grey-text" > Punjabi Singer </span>  </li>
+                     <li>  <img src = "assets/Ninja.jpg" > <span class = "song-name white-text good-font ">Ninja </span> <br> <span class = "song-detail good-font grey-text"> Punjabi Singer </span>  </li>
+                     <li>  <img src = "assets/Kaka.jpg" > <span class = "song-name white-text good-font"> Ninja </span> <br> <span class = "song-detail good-font grey-text"> Punjabi Singer </span>  </li>
+                     <li>  <img src = "assets/Karan Aujla.jpg"> <span class = "song-name white-text good-font">Ninja </span> <br> <span class = "song-detail good-font grey-text" > Punjabi Singer </span>  </li>
+                </ol>
+             </div>
+         </div>
+
+    </section>
+    
+
+
+
+    <!--/******************* Songs list and recently played **************/-->
+
+
+<section id = "songs-list-and-recently-played">
+    <div id = "songs-list">
+        <ol>
+            <li>
+                <div class = "song-list-image"> <img src = "assets/Yaar Anmulle.jpg"> </div>
+                <div class = "song-list-desc"> <div class = "song-list-name white-text"> Yaar Anmulle </div>  <div class = "song-desc"> Sharry Mann </div> </div>
+                 <div class = "heart-icons"> <i class="far fa-heart"></i> &nbsp &nbsp &nbsp &nbsp  <i class="fas fa-plus"></i> </div>
+            </li>
+            <li>
+                <div class = "song-list-image"> <img src = "assets/3 Peg.jpg"> </div>
+                <div class = "song-list-desc"> <div class = "song-list-name white-text"> 3 Peg </div>  <div class = "song-desc">Sharry Mann </div> </div>
+                <div class = "heart-icons" style = "margin-left : 31.8rem;"> <i class="far fa-heart"></i> &nbsp &nbsp &nbsp &nbsp  <i class="fas fa-plus"></i> </div>
+            </li>
+            <li>
+                <div class = "song-list-image"> <img src = "assets/Birthday Gift.jpg"> </div>
+                <div class = "song-list-desc"> <span class = "song-list-name white-text"> Birthday Gift </span> <br> <span class = "song-desc">Sharry Mann </span> </div>
+                <div class = "heart-icons"> <i class="far fa-heart"></i> &nbsp &nbsp &nbsp &nbsp  <i class="fas fa-plus"></i> </div>
+            </li>
+            <li>
+                <div class = "song-list-image"> <img src = "assets/3 Fire.jpg"> </div>
+                <div class = "song-list-desc"> <span class = "song-list-name white-text"> 3 Fire </span> <br> <span class = "song-desc">Sharry Mann </span> </div>
+                <div class = "heart-icons" style = "margin-left : 31.8rem;"> <i class="far fa-heart"></i> &nbsp &nbsp &nbsp &nbsp  <i class="fas fa-plus"></i> </div>
+            </li>
+        </ol>
+    </div>
+
+    <div id = "recently-played">
+        <div id = "queue">
+            <div id = "recently-played-text">
+                 <p class = "white-text good-font" id = "similar-artists-text"> Recently Played </p>
+                 <span id = "view-all"> View All </span>
+            </div>
+             <div id = "recently-played-div">
+                 <ol id = "list">
+                     <li>  <img src = "assets/Khalibali.jpg" > <span class = "song-name white-text good-font inline">Khalibali </span> <br> <span class = "song-detail good-font grey-text" style = "margin-left : -3.6rem;"> Padmavat </span>  </li>
+                     <li>  <img src = "assets/Titlian.jpg" > <span class = "song-name white-text good-font inline">Titlian </span> <br> <span class = "song-detail good-font grey-text" style = "margin-left : -2.65rem;"> Afsana Khan </span>  </li>
+                     <li>  <img src = "assets/Ranjha.jpg" > <span class = "song-name white-text good-font inline"> Ranjha </span> <br> <span class = "song-detail good-font grey-text" style = "margin-left : -2.85rem;"> Shershah </span>  </li>
+                     <li>  <img src = "assets/Raule.jpg"> <span class = "song-name white-text good-font inline">Raule </span> <br> <span class = "song-detail good-font grey-text" style = "margin-left : -2.3rem;"> Jassa Dhillon </span>  </li>
+                </ol>
+             </div>
+         </div>
+    </div>
+
+</section>
+
+
+<!--/******************* Music Player  ********************/-->
+
+    <section id = "music-player">
+    <!--/**** The music player is divided into three sections and each section has been implemented separately ******/-->
+
+    <!--/**** section - 1 ****/-->
+        <div id = "music-player-sec-1">
+            <div id = "music-player-song-image">
+                <img src= "assets/Bekhayali.jpg">
+            </div>
+            <div id = "music-player-song-details">
+                <p style = "font-size : 18px; color : white;letter-spacing : 1px; font-weight : bolder;"> Bekhayali </p>
+                <p style = "font-size : 13px; font-family : sans-serif; color :lightgrey; margin-top : -0.8rem;"> Kabir Singh </p>
+            </div>
+            <div id = "music-player-icons">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban" style = "margin-left : 0.5rem;"></i>
+            </div>
+        </div>
+
+<!--/********** section - 2 **********/-->
+
+        <div id = "music-player-sec-2">
+            <div id = "play-controls">
+                 <i class="fas fa-random" style = "font-size : 22px;"></i>
+                <i class="fas fa-step-backward" style = "font-size : 22px;"></i>
+                <i class="far fa-pause-circle" style = "font-size : 50px; margin-top : -1.2rem;"></i>
+                <i class="fas fa-step-forward" style = "font-size : 22px;"></i>
+                <i class="fas fa-random" style = "font-size : 22px;"></i>
+                
+            </div>
+            <div id = "song-progress">
+            <span > 1:39 </span>
+            <div id = "song-length">
+                <div id = "length-played">
+                    <i class="fas fa-circle" style = "font-size : 25px; color : white; margin :-1rem 0 0 11rem; display : inline-block;"></i>
+                </div>
+                
+            </div>
+            <span > 5:25 </span> 
+            </div>
+        </div>
+
+        <!--/******** section - 3 ********/-->
+
+        <div id = "music-player-sec-3">
+            <i class="fas fa-undo"></i>
+            <i class="fas fa-volume-up"></i>
+            <div id= "max-volume">
+                <div id = "volume">
+                </div>
+            </div>
+            <i class="fas fa-expand-alt"></i>
+
+        </div>
+    </section>
+ 
+
+
+    </body>
+</html>
